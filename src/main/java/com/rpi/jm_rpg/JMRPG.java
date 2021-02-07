@@ -15,7 +15,7 @@ public class JMRPG {
 
     public static final String MODID = "jm_rpg";
     public static final String MODNAME = "JM RPG Mod";
-    public static final String MODVERSION= "0.0.0";
+    public static final String MODVERSION = "0.0.0";
 
     @SidedProxy(clientSide = "com.rpi.jm_rpg.proxy.ClientProxy", serverSide = "com.rpi.jm_rpg.proxy.ServerProxy")
     public static CommonProxy proxy;

@@ -1,7 +1,9 @@
 package com.rpi.jm_rpg.proxy;
 
+import com.rpi.jm_rpg.JMRPG;
 import com.rpi.jm_rpg.ModBlocks;
 import com.rpi.jm_rpg.blocks.TestBlock;
+import com.rpi.jm_rpg.networking.PacketHandler;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -16,7 +18,9 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber
 public class CommonProxy {
 
-	public void preInit(FMLPreInitializationEvent e) {}
+	public void preInit(FMLPreInitializationEvent e) {
+		PacketHandler.registerPacketTypes(JMRPG.MODID);
+	}
 	
 	public void init(FMLInitializationEvent e) {}
 	
